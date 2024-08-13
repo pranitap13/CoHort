@@ -3,7 +3,7 @@ function bytesToAscii(byteArray) {
     for(let i = 0; i < byteArray.length; i++) {
         arr.push(String.fromCharCode(byteArray[i])); //String.fromCharCode(byteArray[i]) converts each byte to its corresponding ASCII character.
     }
-    return arr.join(''); // Returns a single string from the array of characters
+    return arr.join(''); 
     //arr.join('') concatenates the characters into a single string
 }
 
