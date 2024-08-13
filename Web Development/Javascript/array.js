@@ -11,12 +11,11 @@ function filterAdultFemales(arr) {
 
   // Loop through each user in the array
   for (let i = 0; i < arr.length; i++) {
-    const user = arr[i];
     
     // Check if the user is female and older than 18
-    if (user.age > 18 && user.gender === "female") {
+    if (arr[i].age > 18 && arr[i].gender === "female") {
       // Push the user to the new array
-      result.push(user);
+      result.push(arr[i]);
     }
 }
    return result;
